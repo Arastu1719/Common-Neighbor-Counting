@@ -3,8 +3,7 @@
 
 #include <stdio.h>
 #include "Graph.h"
-#include "Algorithm3.cuh"
-#include "Algorithm6.cuh"
+#include "Algorithm5.cuh"
 int Threshold = 2;
 
 int main() {
