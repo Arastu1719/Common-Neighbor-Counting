@@ -30,17 +30,15 @@ public:
 
     void readGraph()
     {
-        fstream in;
-        in.open("D:\input.txt", ios::in);
-        in >> n >> m;
-        cnt.resize(m);
+        cin >> n >> m;
+        cnt.resize(2 * m);
         vector<vector<int>> ed(n);
         offset.resize(n + 1);
         for (int i = 0; i < m; ++i)
         {
             int a, b;
-            in >> a >> b;
-            //--a, --b;
+            cin >> a >> b;
+            // --a, --b;
             ed[a].push_back(b);
             ed[b].push_back(a);
         }
